@@ -1,12 +1,10 @@
 require('dotenv').config();
 
 module.exports = {
-
   development: {
     dialect: 'sqlite',
     storage: './database.sqlite',
   },
-
   production: {
     dialect: 'postgres',
     database: process.env.DATABASE_NAME,
@@ -15,12 +13,10 @@ module.exports = {
     port: process.env.DATABASE_PORT,
     host: process.env.DATABASE_HOST,
   },
-  /*
-  test: {
-    dialect: 'sqlite',
-    storage: './database.test.sqlite',
-  },
-  */
+  // test: {
+  //   dialect: 'sqlite',
+  //   storage: './database.test.sqlite',
+  // },
   test: {
     dialect: 'postgres',
     database: process.env.DATABASE_NAME,

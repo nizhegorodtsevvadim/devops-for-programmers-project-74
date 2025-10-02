@@ -1,17 +1,39 @@
-gt### Hexlet tests and linter status:
+### Hexlet tests and linter status:
 [![Actions Status](https://github.com/nizhegorodtsevvadim/devops-for-programmers-project-74/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/nizhegorodtsevvadim/devops-for-programmers-project-74/actions)
-[![Actions Status](https://github.com/nizhegorodtsevvadim/devops-for-programmers-project-74/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/nizhegorodtsevvadim/devops-for-programmers-project-74/actions)
 
-#### Push pipeline:
-[![CI](https://github.com/nizhegorodtsevvadim/devops-for-programmers-project-74/actions/workflows/push.yml/badge.svg)](https://github.com/nizhegorodtsevvadim/devops-for-programmers-project-74/actions/workflows/push.yml)
+### CI/CD status:
+[![CI/CD](https://github.com/nizhegorodtsevvadim/devops-for-programmers-project-74/actions/workflows/push.yml/badge.svg)](https://github.com/nizhegorodtsevvadim/devops-for-programmers-project-74/actions/workflows/push.yml)
 
-## Требования
-- Docker 20.10+
-- Docker Compose 1.29+
-- Node.js 18+ (только для разработки)
+## Requirements
+* Docker: 28.2.2+
 
-## Инструкции
-### Запуск в production
+## Commands
+Setup
+
 ```bash
-docker-compose -f docker-compose.yml up
+make setup
 ```
+
+Test
+
+```bash
+make test
+```
+
+Run (development)
+```bash
+make dev
+```
+
+Build (production)
+
+```bash
+make prod-build
+```
+
+Push docker image
+
+```bash
+make prod-push
+```
+## [⤿ Docker image](https://hub.docker.com/repository/docker/the9gramm/devops-for-programmers-project-74/general)

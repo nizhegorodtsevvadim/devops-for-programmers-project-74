@@ -1,14 +1,14 @@
 setup:
 	docker compose run --rm app make setup
 
-test:
+ci:
 	docker compose -f docker-compose.yml up --abort-on-container-exit
+
+test:
+	docker compose -f docker-compose.yml -f docker-compose.test.yml up --abort-on-container-exit
 
 dev:
 	docker compose up
-
-ci:
-	docker compose -f docker-compose.yml up --abort-on-container-exit
 
 prod-build:
 	docker compose -f docker-compose.yml build app

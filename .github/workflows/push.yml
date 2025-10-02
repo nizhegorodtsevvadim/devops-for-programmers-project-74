@@ -28,7 +28,7 @@ jobs:
       - name: Login to Docker Hub
         uses: docker/login-action@v2
         with:
-          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          username: the9gramm
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
       - name: Run tests

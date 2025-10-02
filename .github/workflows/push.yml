@@ -6,7 +6,7 @@ on:
     tags: [ 'v*' ]
 
 env:
-  DOCKER_IMAGE: barvv/devops-for-programmers-project-74
+  DOCKER_IMAGE: the9gramm/devops-for-programmers-project-74
   DOCKER_TAG: latest
 
 jobs:
